@@ -8,11 +8,11 @@ RUN apt-get update && \
 # Set the working directory to /baselines
 WORKDIR /baselines
 
-# Clone the UFold repository
-RUN git clone https://github.com/uci-cbcl/UFold.git
+# Clone the GitHub repository
+RUN git clone https://github.com/Agnikulfi/EDGE-Team.git
 
-# Navigate to the root of the UFold repository
-WORKDIR /baselines/UFold
+# Navigate to the root of the GitHub repository
+WORKDIR /baselines/EDGE-Team
 
 # Install conda and create the environment
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh && \
